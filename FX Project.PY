@@ -8,7 +8,7 @@ from scipy.stats import norm
 # Step 1: Fetch Historical Exchange Rate Data
 start_date = "2022-01-01"
 end_date = "2023-01-01"
-fx_data = yf.download("EURUSD=X", start=start_date, end=end_date)
+fx_data = yf.download("EURUSD=X", start=start_date, end=end_date,auto_adjust=False)
 fx_data['Returns'] = fx_data['Adj Close'].pct_change()
 
 # Step 2: Moving Averages and Bollinger Bands
