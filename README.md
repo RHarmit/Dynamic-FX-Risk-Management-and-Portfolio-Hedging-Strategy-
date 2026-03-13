@@ -1,20 +1,52 @@
-FX Risk Management and Portfolio Hedging Strategy
+<div align="center">
 
-Description:
-This project demonstrates a robust approach to managing foreign exchange (FX) risk for a USD/EUR portfolio using Python. By leveraging historical exchange rate data, Bollinger Bands, and dynamic hedging strategies, the project showcases how to minimize risk and optimize portfolio returns. Visualizations and performance metrics, such as Sharpe Ratios, highlight the effectiveness of hedging strategies.
+# 💱 Dynamic FX Risk Management & Portfolio Hedging Strategy
 
-Key Features:
+**End-to-end FX risk analysis using Bollinger Bands, dynamic hedging simulation, and Sharpe ratio comparison to quantify hedging effectiveness on a USD/EUR portfolio.**
 
-FX Analysis: Analyzed historical USD/EUR exchange rate trends using Bollinger Bands and moving averages to identify market volatility.
-Portfolio Hedging: Simulated an 80% hedged portfolio using forward contracts and options, achieving a 15% improvement in risk-adjusted returns.
-Performance Metrics: Compared hedged and unhedged portfolio performance, with Sharpe Ratios of 0.25 (hedged) vs. -0.80 (unhedged).
-Visualization: Generated interactive plots to illustrate exchange rate trends and portfolio performance.
-Technology Stack:
+[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white)](https://python.org)
+[![yfinance](https://img.shields.io/badge/Data-yfinance-orange)](https://pypi.org/project/yfinance/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Python (pandas, numpy, matplotlib, seaborn, yfinance)
-Statistical Models (Bollinger Bands, Sharpe Ratio)
-How to Use:
+</div>
 
-Clone the repository and install dependencies using requirements.txt.
-Run the script to simulate FX portfolio performance.
-Review the visualizations and performance metrics for actionable insights.
+---
+
+## Overview
+
+Demonstrates a rigorous approach to managing foreign exchange risk for a USD/EUR portfolio. Uses Bollinger Bands to gauge FX volatility regimes, simulates an 80% hedged portfolio using forward contracts and options, and benchmarks hedged vs. unhedged performance through Sharpe ratios and drawdown analysis.
+
+## Key Results
+
+| Metric | Unhedged | Hedged |
+|--------|----------|--------|
+| Sharpe Ratio | **-0.80** | **0.25** |
+| Risk-Adjusted Improvement | — | **+15%** |
+| Hedge Ratio | — | **80%** |
+
+## Features
+
+- **FX Rate Analysis** — Fetches historical USD/EUR exchange rates and computes daily returns
+- **Bollinger Bands** — 20-day moving average with ±2σ bands for volatility regime detection
+- **Dynamic Hedging Simulation** — Models an 80% hedged portfolio using forward contracts and options
+- **Sharpe Ratio Comparison** — Side-by-side risk-adjusted return analysis (hedged vs. unhedged)
+- **Interactive Visualization** — Exchange rate trends, Bollinger Bands, and portfolio performance plots
+
+## Tech Stack
+
+| Component | Technology |
+|-----------|-----------|
+| Language | Python 3.9+ |
+| Data | yfinance (EURUSD=X) |
+| Analytics | pandas, NumPy |
+| Models | Bollinger Bands, Sharpe Ratio |
+| Visualization | Matplotlib, Seaborn |
+
+## Quick Start
+
+```bash
+git clone https://github.com/RHarmit/Dynamic-FX-Risk-Management-and-Portfolio-Hedging-Strategy-.git
+cd Dynamic-FX-Risk-Management-and-Portfolio-Hedging-Strategy-
+pip install yfinance pandas numpy matplotlib seaborn
+python "FX Project.PY"
+```
